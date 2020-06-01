@@ -19,4 +19,4 @@ docker build -t hangfire:poc .
 docker run --rm -p 8080:80 hangfire:poc
 ```
 
-Open [Dashboard](http://localhost:8080)
+Open [Dashboard](http://localhost:8080/hangfire)
