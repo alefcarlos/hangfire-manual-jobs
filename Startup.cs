@@ -43,20 +43,22 @@ namespace hangfire_example
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseAuthorization();
 
             app.UseHangfireServer(new BackgroundJobServerOptions
             {
-                Queues = new string[] { "card-stock" }
+                Queues = new[] { "card-stock" }
             });
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapHangfireDashboard();
+                endpoints.MapHangfireDashboard(new DashboardOptions
+                {
+                    Authorization = new[] { new AllowAllConnectionsFilter() },
+                    IgnoreAntiforgeryToken = true
+                });
                 endpoints.MapControllers();
             });
 

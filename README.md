@@ -9,3 +9,10 @@ Using [Hangfire](https://github.com/HangfireIO/Hangfire#hangfire-) and [Hangfire
 - Manual Jobs
 - InMemory Storage
 - ASPNET Core 3
+
+# Run
+
+```bash
+docker build -t hangfire:poc .
+docker run --rm -p 8080:80 hangfire:poc
+```
