@@ -1,3 +1,5 @@
+![.NET Core](https://github.com/alefcarlos/hangfire-manual-jobs/workflows/.NET%20Core/badge.svg)
+
 Hangfire POC
 =======
 
