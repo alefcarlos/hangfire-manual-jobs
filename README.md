@@ -8,3 +8,4 @@ Using [Hangfire](https://github.com/HangfireIO/Hangfire#hangfire-) and [Hangfire
 - Dependency Injection
 - Manual Jobs
 - InMemory Storage
+- ASPNET Core 3
